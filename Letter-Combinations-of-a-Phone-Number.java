@@ -17,16 +17,17 @@
 17
 18    }
 19    public List<String> letterCombinations(String s) {
-20        String[] map = {
-21    "", "", 
-22    "abc", "def", "ghi", "jkl", 
-23    "mno", "pqrs", "tuv", "wxyz"
-24};
-25        
-26        List<String> ans=new ArrayList<>();
-27        StringBuilder sb=new StringBuilder();
-28        helper(ans,s,sb,0,map);
-29        return ans;
-30        
-31    }
-32}
+20        if(s.length() == 0) return new ArrayList<>();
+21        String[] map = {
+22    "", "", 
+23    "abc", "def", "ghi", "jkl", 
+24    "mno", "pqrs", "tuv", "wxyz"
+25};
+26        
+27        List<String> ans=new ArrayList<>();
+28        StringBuilder sb=new StringBuilder();
+29        helper(ans,s,sb,0,map);
+30        return ans;
+31        
+32    }
+33}
