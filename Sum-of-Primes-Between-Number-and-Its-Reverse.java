@@ -3,8 +3,8 @@
 3        if(n==1){
 4            return false;
 5        }
-6        for(int i=2;i<n;i++){
-7            if(n%i==0){
+6        for(int i=2;i*i<=n;i++){
+7            if(n%(i)==0){
 8                return false;
 9            }
 10        }
