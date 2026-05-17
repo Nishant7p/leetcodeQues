@@ -7,7 +7,7 @@
 7        int r=0;
 8        int n=nums.length;
 9        while(r<n){
-10           
+10          
 11                while(r<n&&nums[r]==0){
 12                    r++;
 13                }
