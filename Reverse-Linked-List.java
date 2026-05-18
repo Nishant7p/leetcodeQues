@@ -12,18 +12,16 @@
 12    
 13    public ListNode reverseList(ListNode head) {
 14        if(head==null){
-15            return null;
+15            return head;
 16        }
 17        if(head.next==null){
 18            return head;
 19        }
-20
-21
-22
-23        ListNode news=reverseList(head.next);
-24        head.next.next=head;
-25        head.next=null;
-26        return news;
-27        
-28    }
-29}
+20        ListNode n_h=reverseList(head.next);
+21        head.next.next=head;
+22        head.next=null;
+23
+24        return n_h;
+25        
+26    }
+27}
